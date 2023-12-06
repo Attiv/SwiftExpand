@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-    s.name         = "SwiftExpand_V"
+    s.name         = "SwiftExpandV"
     s.version      = "8.1.2"
     s.summary      = "系统类功能扩展, 极大的提高工作效率."
     s.description  = "通过 extension 实现, 低耦合(iOS && macOS)"
