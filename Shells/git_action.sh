@@ -1,6 +1,6 @@
 #!/bin/bash
 
-username=shang1219178163
+username=Vitta
 
 #第一个参数为lib库文件
 #libCreateAndLinkRepo(){

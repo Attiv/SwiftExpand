@@ -5,6 +5,7 @@ Pod::Spec.new do |s|
     s.version      = "8.1.2"
     s.summary      = "系统类功能扩展, 极大的提高工作效率."
     s.description  = "通过 extension 实现, 低耦合(iOS && macOS)"
+    s.cocoapods_version = '>= 1.13.0'
 
     s.homepage     = "https://github.com/Attiv/SwiftExpand"
     s.license      = { :type => "MIT", :file => "LICENSE" }
