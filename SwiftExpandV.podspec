@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
     s.homepage     = "https://github.com/Attiv/SwiftExpand"
     s.license      = { :type => "MIT", :file => "LICENSE" }
-    s.author       = { "BIN" => "vittawlk@gmail.com" }
+    s.author       = { "BIN" => "wlkhn123@gmail.com" }
     s.source       = { :git => "https://github.com/Attiv/SwiftExpand.git", :tag => s.version }
 
     
