@@ -3,7 +3,7 @@ public class VTUtil {
 
 /// The HTML string meta tag for mobile devices.
 /// This meta tag sets the viewport width to the device width, disables user scaling, and prevents the page from being zoomed in or out.
-static let mobileHtmlStringMeta = "<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;'>"
+public static let mobileHtmlStringMeta = "<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;'>"
 
   /**
    延时执行
