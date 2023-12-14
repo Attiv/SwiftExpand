@@ -2,10 +2,10 @@
 
 Swift 的 SDK 功能扩展,提高工作效率, 低耦合(Objective-C && Swift, iOS && macOS)
 
-
-## Usage：
+## Usage
 
 ### Runtime方法封装
+
 ```
 @objc public extension NSObject{
 
@@ -145,6 +145,7 @@ Swift 的 SDK 功能扩展,提高工作效率, 低耦合(Objective-C && Swift, i
 
 }
 ```
+
 ### 反射方法封装 NNClassFromString
 
     //get class by name
@@ -162,9 +163,9 @@ Swift 的 SDK 功能扩展,提高工作效率, 低耦合(Objective-C && Swift, i
          print("❌_类不存在: \(name)")
         return nil;
     }
-    
+
 ### 反射方法封装 UICtrFromString
-    
+
     /// get UIViewController by name
     public func UICtrFromString(_ vcName: String) -> UIViewController {
         let cls: AnyClass = NNClassFromString(vcName)!;
@@ -250,7 +251,7 @@ Swift 的 SDK 功能扩展,提高工作效率, 低耦合(Objective-C && Swift, i
         let date = DateFormatter.dateFromString(dateStr, fmt: fmt)
         return "\(date.timeIntervalSince1970)";
     }
-    
+
 ### 重构 UIBarButtonItem 事件转回调
 
     @objc extension UIBarButtonItem{
@@ -273,7 +274,7 @@ Swift 的 SDK 功能扩展,提高工作效率, 低耦合(Objective-C && Swift, i
 }
 
 ### 呈现方法封装 UIViewController
-       
+
     @objc public extension UIViewController {
     
         /// 呈现    
@@ -333,7 +334,7 @@ Swift 的 SDK 功能扩展,提高工作效率, 低耦合(Objective-C && Swift, i
             return result
         }
     } 
-    
+
 ### 重构 UIView 手势方法
 
     @objc public extension UIView {
@@ -544,8 +545,7 @@ Swift 的 SDK 功能扩展,提高工作效率, 低耦合(Objective-C && Swift, i
             }
         }
     }
-    
-    
+
 ### 重构 NSAttributedString 链式编程实现
 
     ///属性链式编程实现
@@ -639,19 +639,36 @@ Swift 的 SDK 功能扩展,提高工作效率, 低耦合(Objective-C && Swift, i
         }
     }
 
-    
-##  Requirements
+### UIImage 加载 gif (<https://github.com/kiritmodi2702/GIF-Swift/blob/master/GIF-Swift/iOSDevCenters%2BGIF.swift>)
+
+- `UIImage.gifImageWithName("Name")`
+- `gifImageWithData(gifData)`
+- `UIImage.gifImageWithURL(gifURL)`
+
+### 延时执行
+
+- `VTUtil.delayExecution(seconds: Double, closure: @escaping () -> Void)`
+
+### 通知
+
+```
+lazy var observer: NotificationObserver = .init()
+observer.addObserver(forName: Name) { notification in
+ // your handle
+}
+```
+
+## Requirements
 
     s.ios.deployment_target = '10.0'
     s.osx.deployment_target = '10.13'
     
     s.swift_version = "5"
-    
-##  Author
 
-shang1219178163, shang1219178163@gmail.com
+## Author
+
+shang1219178163, <shang1219178163@gmail.com>
 
 ## License
 
 SwiftExpand is available under the MIT license. See the LICENSE file for more info.
-        
