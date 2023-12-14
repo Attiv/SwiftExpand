@@ -1,5 +1,5 @@
 import Foundation
-class VTUtil {
+public class VTUtil {
 
 /// The HTML string meta tag for mobile devices.
 /// This meta tag sets the viewport width to the device width, disables user scaling, and prevents the page from being zoomed in or out.
@@ -13,7 +13,7 @@ static let mobileHtmlStringMeta = "<meta name='viewport' content='width=device-w
      - seconds: The number of seconds to delay the execution.
      - closure: The closure to be executed after the delay.
    */
-  class func delayExecution(seconds: Double, closure: @escaping () -> Void) {
+public class func delayExecution(seconds: Double, closure: @escaping () -> Void) {
     DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
       closure()
     }
