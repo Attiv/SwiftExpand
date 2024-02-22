@@ -652,7 +652,7 @@ Swift 的 SDK 功能扩展,提高工作效率, 低耦合(Objective-C && Swift, i
 ### 通知
 
 ```
-lazy var observer: NotificationObserver = .init()
+var observer: NotificationObserver = .init()
 observer.addObserver(forName: Name) { notification in
  // your handle
 }
